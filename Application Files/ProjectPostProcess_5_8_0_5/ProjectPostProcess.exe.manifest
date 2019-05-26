@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ProjectPostProcess.exe" version="5.8.0.5" publicKeyToken="e2a5193de29d7dd8" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:publisher="天津大学港口实验室" asmv2:product="后处理集成程序" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ProjectPostProcess" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ProjectPostProcess.exe" parameters="" />
+  </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="3DTools.dll" size="73728">
+      <assemblyIdentity name="3DTools" version="1.0.2614.20437" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>gjt58TUKmqwStr8Y7qYX07aXnToJ0oNt42dPB5ks1Lk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DHI.DHIfl.dll" size="13824">
+      <assemblyIdentity name="DHI.DHIfl" version="14.0.0.0" publicKeyToken="C513450B5D0BF0BF" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>vbjWk7NSaIXq6eP+nzYdlhvkVAZOS8o53t+uH1nsXgI=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DHI.Generic.MikeZero.DFS.dll" size="347136">
+      <assemblyIdentity name="DHI.Generic.MikeZero.DFS" version="14.0.0.0" publicKeyToken="C513450B5D0BF0BF" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>qPC9RXqoW7CRQt77p1ZIqJNXTfCNDsMykJ5wjXCMvB4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="DHI.Generic.MikeZero.EUM.dll" size="77824">
+      <assemblyIdentity name="DHI.Generic.MikeZero.EUM" version="14.0.0.0" publicKeyToken="C513450B5D0BF0BF" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>MtwhXfNFNkwPEpamD9cRc7DAeBaHRBdTRuLzmXi1IHY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PostControlLib.dll" size="34816">
+      <assemblyIdentity name="PostControlLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>8vYirXvFvo5FVL8PRltxMufuRmbQCBYNcg/afJ4ouxQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PostProcessLib.dll" size="117248">
+      <assemblyIdentity name="PostProcessLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Jg92fYEqBinu6fcUK2tmksetjc2gcFDW20o3AjJgDQQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ProjectPostProcess.exe" size="69416">
+      <assemblyIdentity name="ProjectPostProcess" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>UOv29HONQSiOhrRx3XNlWZxLoT4kDMKA30btnDPGWBY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ScientificGraphic.dll" size="54272">
+      <assemblyIdentity name="ScientificGraphic" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>KoRxV3X3cM0xzXaYkfiSK4RIfi9BsOSUvFV9zo+Tieo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="hdf5.dll" size="2233344">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aU2XVevy5Xbzf4xu6IkW1msTFN0fOfe2s/j3FEXLKwY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="hdf5_hl.dll" size="99840">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>D85jn6BrGTvPH2c2xXtRU9LSbfvkVldEKTvhUVd6hCk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="netcdf_wrap.dll" size="865280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OURDGnNIa+q4+AzCESxNc6oi8tOHJPqt6lYX4StQD5k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="ProjectPostProcess.exe.config" size="184">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FqWy0dfMmRS85zkU1NlW07p6LsNOPUHodvLiZcFdgJY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="zlib1.dll" size="77824">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HceWoqBfTnJlmOpwUTVop9agF2A14vKnU+9/fg0Mbh0=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=港口实验室" issuerKeyHash="59fbc249039c3dad32895f4b022eb289fa8bf73a" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>k6patKZxdsQBVbSAk4gtveUWPWc=</DigestValue></Reference></SignedInfo><SignatureValue>fFlnjajIHqb4xCacNmaAQmdRzQHP2Uqx9ExOQhdjgPy0BPTCZwvMjcqdReAptG3iXWwGyRM28IV7B3xlJolypdjZvddWdDTVa9+qTnPBw4kfdo0Hpj0p7EHBNLaCf4urRe2maHvrqqBF8yREgVIuXz0PnTAPtBcA3W1dJrLlJ0ydsyq3ykUyShmDaJPx76QU8/nRJKTltftzBEm1hDUuffbK9EOPHn+ny/7T39QauLSRLVMTs9IMJ23ut5b+Vji42NsAwg940gHhyFyJbCbW5fJs7s+JI9FDdc6ZLsmD0gO5JMFNPRppmpiBhi0njwMnre3xmKe1XHJxKSz96Hocgg==</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>qjxUv1a1sMF1c1BhjQZjyHjkgC2eVgzkuHvtyOXstebwPgL6y+UACurHBxqAvWn3Pi2lMo0DEQKIdDbxotY3W4ijzOql+1v1NcQBRJNLO2Rr6ggb+dhUMEjF7MBNo4YFem0d4MDgxXJ6HfwTZ1PxvDSSibeamX5h0jxiQtdTIF71ZbHXemar3Eaq35AZwUspoCeTV5FktFGX9Ord1GkmBEpvgCRaTmZ4bCenG3C9rowJOPZSXNKKP4fhv5G50vai6E/6lMXX6ACb/QwqefYHMVTGbgT04HFBYDnHgBVmEqVnDiPFGIbhNVkvhmGrUFOTtPZgeJ+AaDycrtSzgceDAQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="673d16e5bd2d889380b45501c47671a6b45aaa93" Description="" Url=""><as:assemblyIdentity name="ProjectPostProcess.exe" version="5.8.0.5" publicKeyToken="e2a5193de29d7dd8" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=港口实验室</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>PxEKrGedMzNMAcDr32F9+yvIzH0=</DigestValue></Reference></SignedInfo><SignatureValue>goVubNf5EM/sVz4RePVmXDdS+FgUTCv+elyjVcPTGpnpQqgMG0U6ZDEpxmd2EpwXX9P4JrKbxukfvYJ2eFxZPNWcPozkquYFcYlp17hL3i4qEKyur4D8XkV5HbkNGQYP0thKy3WBfp/vEdzAR9v5mAN5Z5wi5XC8BHNsEITlZK3RlVfzuR5v7VnKXSpWmLQ05Birmp/nhtNHVVjRUCVDT0+t1+ZsaLuqTdFWpVSR4HALwC4h+e/IXMYVR/cBmFCLQunhgbW8IXjvNgtd6YE3FnB7IuDCXZrBN+5UOL2i9ilceK+K/HUkzFmTARuDaR8kQXx8O13pQfrvugYPTn5rgg==</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>qjxUv1a1sMF1c1BhjQZjyHjkgC2eVgzkuHvtyOXstebwPgL6y+UACurHBxqAvWn3Pi2lMo0DEQKIdDbxotY3W4ijzOql+1v1NcQBRJNLO2Rr6ggb+dhUMEjF7MBNo4YFem0d4MDgxXJ6HfwTZ1PxvDSSibeamX5h0jxiQtdTIF71ZbHXemar3Eaq35AZwUspoCeTV5FktFGX9Ord1GkmBEpvgCRaTmZ4bCenG3C9rowJOPZSXNKKP4fhv5G50vai6E/6lMXX6ACb/QwqefYHMVTGbgT04HFBYDnHgBVmEqVnDiPFGIbhNVkvhmGrUFOTtPZgeJ+AaDycrtSzgceDAQ==</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIC9jCCAeKgAwIBAgIQwbB8Dh9nNrhE/vfS85FoOjAJBgUrDgMCHQUAMBUxEzARBgNVBAMeCm4vU+NbnpqMW6QwHhcNMTYwMTAzMTYwMDAwWhcNMjAwMTAzMTYwMDAwWjAVMRMwEQYDVQQDHgpuL1PjW56ajFukMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqjxUv1a1sMF1c1BhjQZjyHjkgC2eVgzkuHvtyOXstebwPgL6y+UACurHBxqAvWn3Pi2lMo0DEQKIdDbxotY3W4ijzOql+1v1NcQBRJNLO2Rr6ggb+dhUMEjF7MBNo4YFem0d4MDgxXJ6HfwTZ1PxvDSSibeamX5h0jxiQtdTIF71ZbHXemar3Eaq35AZwUspoCeTV5FktFGX9Ord1GkmBEpvgCRaTmZ4bCenG3C9rowJOPZSXNKKP4fhv5G50vai6E/6lMXX6ACb/QwqefYHMVTGbgT04HFBYDnHgBVmEqVnDiPFGIbhNVkvhmGrUFOTtPZgeJ+AaDycrtSzgceDAQIDAQABo0owSDBGBgNVHQEEPzA9gBCJEVPhrWgVxWSTIJgJKRVOoRcwFTETMBEGA1UEAx4Kbi9T41uemoxbpIIQwbB8Dh9nNrhE/vfS85FoOjAJBgUrDgMCHQUAA4IBAQChe91+srwAt7LwOYT9BqMESfb+r7IeQVvr4TfPMZvVfzrzW9tDxatIMoa8iEVPRbmwP90w7J1CAOVyOogJ2oVMyRPXSJhKC6ZQ4bFgYzJpQ0bvsyVY/wlt+aUSh75Em3svD1BYHB9ZzTxaUBIQal+H8N3UNYZxdp2IMBtE00boPH6keY9KjB8ETYZNwN6E71inbSvsPl5sg6MoK90+x0sesMrpDetRHkZXJ8K2xhvdxuhsbs2Idu1twXgy3eOTHwTK8ueYN9glHivUqXRjRAZ58q2N01DC1q+lSNpQuw4G97mizkvM6Upppwf/ODKzTZjKyK5Ri2xTDiUqQdyXScN6</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
