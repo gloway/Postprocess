@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xrml="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <assemblyIdentity name="ProjectPostProcess.application" version="5.7.1.14" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <assemblyIdentity name="ProjectPostProcess.application" version="5.7.1.13" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <description asmv2:publisher="天津大学港口实验室" asmv2:product="后处理集成程序" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" disallowUrlActivation="true" mapFileExtensions="true" co.v1:createDesktopShortcut="true" />
   <compatibleFrameworks xmlns="urn:schemas-microsoft-com:clickonce.v2">
     <framework targetVersion="4.5" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Application Files\ProjectPostProcess_5_7_1_14\ProjectPostProcess.exe.manifest" size="7848">
-      <assemblyIdentity name="ProjectPostProcess.exe" version="5.7.1.14" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+    <dependentAssembly dependencyType="install" codebase="Application Files\ProjectPostProcess_5_7_1_13\ProjectPostProcess.exe.manifest" size="7848">
+      <assemblyIdentity name="ProjectPostProcess.exe" version="5.7.1.13" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Ssgd1B7N/Wr6GImtxKFRXc2Yyk/qSkYLQzSgI20NiY8=</dsig:DigestValue>
+        <dsig:DigestValue>+r1l7XK1mIqZ/bGxwDXG1EWqvmb39cTE4dM41lwXaNM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
